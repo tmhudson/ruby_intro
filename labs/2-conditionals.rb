@@ -2,6 +2,10 @@
 # is the same as where this file is located and then run:
 # ruby 2-conditionals.rb
 
+    # to get into this working directory:
+    # cd ..
+    # cd code-along
+
 # EXERCISE
 # Continue your craps program (starting code below).
 # When executed, this program should print out two random
@@ -30,3 +34,11 @@ puts die2
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
 puts "The total is: #{total}"
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else   
+    puts "THE POINT IS " + total.to_s
+end
